@@ -1,7 +1,7 @@
 {% extends 'dados/base.html' %}
 {% block conteudo %}    
 <body>
-    <fieldset style="padding: 70px 50px; position: absolute; left: 35%; background-color: aqua;">
+    <fieldset style="padding: 70px 60px; position: absolute; left: 35%; background-color: aqua;">
 
         <h1 style="text-align: center;">Pagina de cadastro</h1>
         </br>
@@ -9,36 +9,41 @@
             {% csrf_token %}
             <div>
                 <div>
+                    Nome do setor: 
+                    <input name="nome_setor" type="text" style="position: absolute; left: 37%;">
+                </div>
+                </br>
+                <div>
                     Funcionarios: 
-                    <input name="funcionarios" type="text" style="position: absolute; left: 40%;">
+                    <input name="funcionarios" type="number" style="position: absolute; left: 37%;">
                 </div>
                 </br>
     
                 <div>
                     Clientes: 
-                    <input name="clientes" type="number" style="position: absolute; left: 40%";>
+                    <input name="clientes" type="number" style="position: absolute; left: 37%";>
                 </div>
                 </br>
     
                 <div>
                     Produtos: 
-                    <input name="produtos" type="number" style="position: absolute; left: 40%;">
+                    <input name="produtos" type="number" style="position: absolute; left: 37%;">
                 </div>
                 </br>
     
                 <div>
                     Fornecedor: 
-                    <input name="fornecedores" type="number" style="position: absolute; left: 40%;">
+                    <input name="fornecedores" type="number" style="position: absolute; left: 37%;">
                 </div>
                 </br>
     
                 <div>
                     Empresa T: 
-                    <input name="empresas_terceiras" type="number" style="position: absolute; left: 40%;">
+                    <input name="empresas_terceiras" type="number" style="position: absolute; left: 37%;">
                 </div>
                 </br>
     
-                <button type="submit" style="position: absolute; background-color: aquamarine; left: 40%; top: 87%; padding: 10px 15px; cursor: pointer;">
+                <button type="submit" style="position: absolute; background-color: aquamarine; left: 37%; top: 87%; padding: 10px 15px; cursor: pointer;">
                     SALVAR
                 </button>
             </div>

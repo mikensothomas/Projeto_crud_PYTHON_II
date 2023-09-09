@@ -3,15 +3,17 @@
 <div class="container">
     <table class="table table-bordered table-bordered">
         <tr style="background-color: yellow;">
-            <th>Funcionarios</th>
-            <th>Clientes</th>
-            <th>Fornecedores</th>
-            <th>Produtos</th>
-            <th>Empresa_terceiras</th>
+            <th>Nome do setor</th>
+            <th>QTD P E</th>
+            <th>Maquinas</th>
+            <th>Horas trabalhadas</th>
+            <th>QTD Produtos</th>
+            <th>Salario básico</th>
             <th>Estado</th>
         </tr>
         {% for dado in dados %}
         <tr>
+            <td>{{dado.nome_setor}}</td>
             <td>{{dado.funcionarios}}</td>
             <td>{{dado.clientes}}</td>
             <td>{{dado.fornecedores}}</td>

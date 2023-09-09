@@ -6,6 +6,7 @@ def home(request):
 
 def dados(request):
     novo_dado = Dado()
+    novo_dado.nome_setor = request.POST.get('nome_setor')
     novo_dado.funcionarios = request.POST.get('funcionarios')
     novo_dado.clientes = request.POST.get('clientes')
     novo_dado.fornecedores = request.POST.get('fornecedores')
