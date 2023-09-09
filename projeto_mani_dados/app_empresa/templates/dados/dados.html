@@ -1,0 +1,20 @@
+<div class="container">
+    <table>
+        <tr>
+            <th>Funcionarios</th>
+            <th>Clientes</th>
+            <th>Fornecedores</th>
+            <th>Produtos</th>
+            <th>Empresa_terceiras</th>
+        </tr>
+        {% for dado in dados %}
+        <tr>
+            <td>{{novo_dado.funcionarios}}</td>
+            <td>{{novo_dado.clientes}}</td>
+            <td>{{novo_dado.fornecedores}}</td>
+            <td>{{novo_dado.produtos}}</td>
+            <td>{{novo_dado.empresas_terceiras}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
