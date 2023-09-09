@@ -1,24 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Informatica</title>
-</head>
+{% extends 'dados/base.html' %}
+{% block conteudo %}    
 <body>
     <fieldset style="padding: 70px 50px; position: absolute; left: 35%; background-color: aqua;">
-        <legend style="text-align: center; color: blue;">
-            EMPRESA
-        </legend>
 
         <h1 style="text-align: center;">Pagina de cadastro</h1>
-
+        </br>
         <form action="{% url 'listagem' %}" method="post">
             {% csrf_token %}
             <div>
                 <div>
                     Funcionarios: 
-                    <input name="funcionarios" type="number" style="position: absolute; left: 40%;">
+                    <input name="funcionarios" type="text" style="position: absolute; left: 40%;">
                 </div>
                 </br>
     
@@ -49,12 +41,8 @@
                 <button type="submit" style="position: absolute; background-color: aquamarine; left: 40%; top: 87%; padding: 10px 15px; cursor: pointer;">
                     SALVAR
                 </button>
-    
-                <div>
-                    <a style="color: blue; text-decoration: none; position: absolute; top: 10%; left: 35%;" href="dados.html">Página de dados</a>
-                </div>
             </div>
         </form>
     </fieldset>
 </body>
-</html>
+{% endblock %}

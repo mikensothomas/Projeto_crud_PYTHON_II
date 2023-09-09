@@ -1,5 +1,7 @@
-<div>
-    <table border="10">
+{% extends 'dados/base.html' %}
+{% block conteudo %}   
+<div class="container">
+    <table class="table table-bordered table-bordered">
         <tr style="background-color: yellow;">
             <th>Funcionarios</th>
             <th>Clientes</th>
@@ -21,3 +23,4 @@
         {% endfor %}
     </table>
 </div>
+{% endblock %}
