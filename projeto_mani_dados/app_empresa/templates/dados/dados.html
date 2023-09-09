@@ -1,19 +1,22 @@
-<div class="container">
-    <table>
-        <tr>
+<div>
+    <table border="10">
+        <tr style="background-color: yellow;">
             <th>Funcionarios</th>
             <th>Clientes</th>
             <th>Fornecedores</th>
             <th>Produtos</th>
             <th>Empresa_terceiras</th>
+            <th>Estado</th>
         </tr>
         {% for dado in dados %}
         <tr>
-            <td>{{novo_dado.funcionarios}}</td>
-            <td>{{novo_dado.clientes}}</td>
-            <td>{{novo_dado.fornecedores}}</td>
-            <td>{{novo_dado.produtos}}</td>
-            <td>{{novo_dado.empresas_terceiras}}</td>
+            <td>{{dado.funcionarios}}</td>
+            <td>{{dado.clientes}}</td>
+            <td>{{dado.fornecedores}}</td>
+            <td>{{dado.produtos}}</td>
+            <td>{{dado.empresas_terceiras}}</td>
+            <td><button class="remover" style="cursor: pointer; background-color: red;">Remover</button></td>
+            <td><button class="editar" style="cursor: pointer; background-color: green;">Editar</button></td>
         </tr>
         {% endfor %}
     </table>
