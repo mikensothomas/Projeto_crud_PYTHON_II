@@ -1,20 +1,18 @@
-{% extends 'dados/base.html' %}
-{% block conteudo %}    
 <body>
-    <fieldset style="padding: 70px 60px; position: absolute; left: 35%; background-color: aqua;">
-
+   <fieldset style="padding: 70px 60px; position: absolute; left: 35%; background-color: rgb(54, 202, 202);">
+    <legend style="text-align: center; color: blue;">EMPRESA</legend>
         <h1 style="text-align: center;">Pagina de cadastro</h1>
         </br>
         <form action="{% url 'listagem' %}" method="post">
             {% csrf_token %}
             <div>
                 <div>
-                    Nome do setor: 
+                    Nome S: 
                     <input name="nome_setor" type="text" style="position: absolute; left: 37%;">
                 </div>
                 </br>
                 <div>
-                    Funcionarios: 
+                    Funcionario: 
                     <input name="funcionarios" type="number" style="position: absolute; left: 37%;">
                 </div>
                 </br>
@@ -50,4 +48,3 @@
         </form>
     </fieldset>
 </body>
-{% endblock %}

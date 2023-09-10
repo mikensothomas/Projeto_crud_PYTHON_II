@@ -1,5 +1,6 @@
 {% extends 'dados/base.html' %}
-{% block conteudo %}   
+{% block conteudo %} 
+<a class="btn btn-success" style="position: absolute; left: 85%;" href="">Adicionar</a>  
 <div class="container">
     <table class="table table-bordered table-bordered">
         <tr style="background-color: yellow;">
@@ -9,7 +10,7 @@
             <th>Horas trabalhadas</th>
             <th>QTD Produtos</th>
             <th>Salario básico</th>
-            <th>Estado</th>
+            <th>Ações</th>
         </tr>
         {% for dado in dados %}
         <tr>
@@ -19,8 +20,8 @@
             <td>{{dado.fornecedores}}</td>
             <td>{{dado.produtos}}</td>
             <td>{{dado.empresas_terceiras}}</td>
-            <td><button class="remover" style="cursor: pointer; background-color: red;">Remover</button></td>
-            <td><button class="editar" style="cursor: pointer; background-color: green;">Editar</button></td>
+            <td><button class="btn btn-danger" style="cursor: pointer;">Excluir</button></td>
+            <td><button class="btn btn-warning" style="cursor: pointer;">Editar</button></td>
         </tr>
         {% endfor %}
     </table>
